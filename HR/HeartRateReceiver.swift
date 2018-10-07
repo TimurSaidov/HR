@@ -31,6 +31,7 @@ class HeartRateReceiver: UIViewController {
         DispatchQueue.global().async {
             self.startHeartRateMonitoringExample()
         }
+//        performSegue(withIdentifier: "unwindSegueToHRVC", sender: sender)
         navigationController?.popViewController(animated: true)
     }
     

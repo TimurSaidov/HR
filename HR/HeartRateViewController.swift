@@ -16,9 +16,8 @@ class HeartRateViewController: UIViewController, HeartRateReceiverDelegate {
     
     @IBAction func unwindSegueToHRViewController(segue: UIStoryboardSegue) {
         guard segue.identifier == "unwindSegueToHRVC" else { return }
-        
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
