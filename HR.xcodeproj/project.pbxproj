@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		390B2FD8216962F3006B8883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390B2FD7216962F3006B8883 /* AppDelegate.swift */; };
-		390B2FDA216962F3006B8883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390B2FD9216962F3006B8883 /* ViewController.swift */; };
 		390B2FDD216962F3006B8883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390B2FDB216962F3006B8883 /* Main.storyboard */; };
 		390B2FDF216962F4006B8883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390B2FDE216962F4006B8883 /* Assets.xcassets */; };
 		390B2FE2216962F4006B8883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390B2FE0216962F4006B8883 /* LaunchScreen.storyboard */; };
+		390B2FEA2169646B006B8883 /* HeartRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390B2FE92169646B006B8883 /* HeartRateViewController.swift */; };
+		390B2FEC216964A1006B8883 /* HeartRateReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390B2FEB216964A1006B8883 /* HeartRateReceiver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		390B2FD4216962F3006B8883 /* HR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		390B2FD7216962F3006B8883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		390B2FD9216962F3006B8883 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		390B2FDC216962F3006B8883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		390B2FDE216962F4006B8883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		390B2FE1216962F4006B8883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		390B2FE3216962F4006B8883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		390B2FE92169646B006B8883 /* HeartRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewController.swift; sourceTree = "<group>"; };
+		390B2FEB216964A1006B8883 /* HeartRateReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateReceiver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				390B2FD7216962F3006B8883 /* AppDelegate.swift */,
-				390B2FD9216962F3006B8883 /* ViewController.swift */,
+				390B2FE92169646B006B8883 /* HeartRateViewController.swift */,
+				390B2FEB216964A1006B8883 /* HeartRateReceiver.swift */,
 				390B2FDB216962F3006B8883 /* Main.storyboard */,
 				390B2FDE216962F4006B8883 /* Assets.xcassets */,
 				390B2FE0216962F4006B8883 /* LaunchScreen.storyboard */,
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				390B2FDA216962F3006B8883 /* ViewController.swift in Sources */,
 				390B2FD8216962F3006B8883 /* AppDelegate.swift in Sources */,
+				390B2FEA2169646B006B8883 /* HeartRateViewController.swift in Sources */,
+				390B2FEC216964A1006B8883 /* HeartRateReceiver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
