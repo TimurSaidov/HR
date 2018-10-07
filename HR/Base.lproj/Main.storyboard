@@ -18,15 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vyU-mT-XCT">
-                                <rect key="frame" x="0.0" y="111" width="320" height="387"/>
+                                <rect key="frame" x="0.0" y="111" width="320" height="367"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDf-gV-7P3">
-                                <rect key="frame" x="60" y="518" width="200" height="30"/>
+                                <rect key="frame" x="60" y="498" width="200" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1B3-kb-3ad"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="41S-bo-bpM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -44,7 +45,7 @@
                             <constraint firstItem="vyU-mT-XCT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DLN-ob-Ktm"/>
                             <constraint firstItem="LDf-gV-7P3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="IIG-c0-4Tf"/>
                             <constraint firstItem="vyU-mT-XCT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OL5-c4-Ira"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vyU-mT-XCT" secondAttribute="bottom" constant="70" id="Wk1-St-1dB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vyU-mT-XCT" secondAttribute="bottom" constant="90" id="Wk1-St-1dB"/>
                             <constraint firstItem="vyU-mT-XCT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aO6-NW-lOp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LDf-gV-7P3" secondAttribute="bottom" constant="20" id="th5-l1-dAt"/>
                         </constraints>
@@ -68,10 +69,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyM-q9-D7s">
-                                <rect key="frame" x="125" y="324.5" width="70" height="30"/>
+                                <rect key="frame" x="110" y="314.5" width="100" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="0wd-Oo-q8v"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="0wd-Oo-q8v"/>
+                                    <constraint firstAttribute="height" constant="50" id="dnN-by-iXJ"/>
                                 </constraints>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

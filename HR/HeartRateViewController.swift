@@ -20,8 +20,6 @@ class HeartRateViewController: UIViewController, HeartRateReceiverDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     func heartRateUpdated(to bpm: Int) {
