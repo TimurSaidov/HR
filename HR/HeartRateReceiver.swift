@@ -42,10 +42,19 @@ class HeartRateReceiver: UIViewController {
     }
     
     func startHeartRateMonitoringExample() {
+        guard let hrvc = delegate as? HeartRateViewController else { return }
+        DispatchQueue.main.async {
+            hrvc.heartRateButton.isUserInteractionEnabled = false
+            hrvc.heartRateButton.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        }
         for _ in 1...10 {
             let randomHR = 60 + Int(arc4random_uniform(UInt32(15)))
             currentHR = randomHR
             Thread.sleep(forTimeInterval: 2)
+        }
+        DispatchQueue.main.async {
+            hrvc.heartRateButton.isUserInteractionEnabled = true
+            hrvc.heartRateButton.backgroundColor = #colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1)
         }
     }
     

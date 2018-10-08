@@ -53,6 +53,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Heart Rate " id="Oek-uA-6tc"/>
                     <connections>
+                        <outlet property="heartRateButton" destination="LDf-gV-7P3" id="vKv-7h-gst"/>
                         <outlet property="heartRateTextView" destination="vyU-mT-XCT" id="BQI-Qe-Kdz"/>
                     </connections>
                 </viewController>

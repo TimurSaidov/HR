@@ -13,6 +13,7 @@ class HeartRateViewController: UIViewController, HeartRateReceiverDelegate {
     var text: String = ""
     
     @IBOutlet weak var heartRateTextView: UITextView!
+    @IBOutlet weak var heartRateButton: UIButton!
     
     @IBAction func unwindSegueToHRViewController(segue: UIStoryboardSegue) {
         guard segue.identifier == "unwindSegueToHRVC" else { return }
