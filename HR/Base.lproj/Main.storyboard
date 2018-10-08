@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vyU-mT-XCT">
-                                <rect key="frame" x="0.0" y="111" width="320" height="367"/>
+                                <rect key="frame" x="0.0" y="361" width="320" height="117"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -35,25 +35,40 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="actionBegin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eVq-9i-1Jw"/>
                                     <segue destination="0ZX-yA-R7L" kind="show" identifier="Segue" id="82Q-s3-gEm"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="❤️" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQb-U4-1lU">
+                                <rect key="frame" x="60" y="136" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="VgL-fk-e7k"/>
+                                    <constraint firstAttribute="height" constant="200" id="p5w-X8-b8J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LDf-gV-7P3" secondAttribute="trailing" constant="60" id="6le-9s-CZ9"/>
-                            <constraint firstItem="vyU-mT-XCT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DLN-ob-Ktm"/>
+                            <constraint firstItem="vyU-mT-XCT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="DLN-ob-Ktm"/>
                             <constraint firstItem="LDf-gV-7P3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="IIG-c0-4Tf"/>
                             <constraint firstItem="vyU-mT-XCT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OL5-c4-Ira"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vyU-mT-XCT" secondAttribute="bottom" constant="90" id="Wk1-St-1dB"/>
                             <constraint firstItem="vyU-mT-XCT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aO6-NW-lOp"/>
+                            <constraint firstItem="BQb-U4-1lU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="gPe-rx-gXt"/>
+                            <constraint firstItem="vyU-mT-XCT" firstAttribute="top" secondItem="BQb-U4-1lU" secondAttribute="bottom" constant="25" id="knv-eP-jdJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LDf-gV-7P3" secondAttribute="bottom" constant="20" id="th5-l1-dAt"/>
+                            <constraint firstItem="BQb-U4-1lU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yVI-7w-gmS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Heart Rate " id="Oek-uA-6tc"/>
                     <connections>
                         <outlet property="heartRateButton" destination="LDf-gV-7P3" id="vKv-7h-gst"/>
+                        <outlet property="heartRateLabel" destination="BQb-U4-1lU" id="02M-2a-jg8"/>
                         <outlet property="heartRateTextView" destination="vyU-mT-XCT" id="BQI-Qe-Kdz"/>
                     </connections>
                 </viewController>

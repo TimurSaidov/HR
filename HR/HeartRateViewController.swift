@@ -14,9 +14,15 @@ class HeartRateViewController: UIViewController, HeartRateReceiverDelegate {
     
     @IBOutlet weak var heartRateTextView: UITextView!
     @IBOutlet weak var heartRateButton: UIButton!
+    @IBOutlet weak var heartRateLabel: UILabel!
     
     @IBAction func unwindSegueToHRViewController(segue: UIStoryboardSegue) {
         guard segue.identifier == "unwindSegueToHRVC" else { return }
+    }
+    
+    @IBAction func actionBegin(_ sender: UIButton) {
+        text = ""
+        heartRateTextView.text = text
     }
     
     override func viewDidLoad() {
@@ -26,6 +32,7 @@ class HeartRateViewController: UIViewController, HeartRateReceiverDelegate {
     func heartRateUpdated(to bpm: Int) {
         text += "The most recent heart rate reading is \(String(bpm))\n"
         DispatchQueue.main.async {
+            self.heartRateLabel.text = " ❤️ \(String(bpm))"
             self.heartRateTextView.text = self.text
         }
         print("The user has been shown a heart rate of \(bpm).")
